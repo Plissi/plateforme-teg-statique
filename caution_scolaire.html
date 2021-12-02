@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caution scolaire</title>
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+    <script src="js\bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images\logo\logo_bicec.png" alt="logo_bicec" height="48" class="d-inline-block ratio-21x9">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-link" href="decouvert.html">Découverts</a>
+              <a class="nav-link" href="escompte.html">Escompte</a>
+              <a class="nav-link" href="affacturage.html">Affacturage</a>
+              <div class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Caution
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="caution_a_vu.html">Caution à vue</a></li>
+                  <li><a class="dropdown-item" href="caution_scolaire.html">Caution scolaire</a></li>
+                </ul>
+              </div>
+              <a class="nav-link" href="login.html">Se déconnecter</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container text-center shadow bg-body rounded p-3 mb-5 mt-4" style="height: 75%;
+  ">
+            <h5 class="mb-3">Edition d'une convention de prêt (caution scolaire et traités avalisées)</h5>
+        <form action="index.html" method="post" class="text-center">
+            <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3">
+                <div class="col d-flex flex-column bd-highlight">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="compte-gestion" placeholder="0000 0000 0000">
+                        <label for="compte-gestion">N° Compte Gestion</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="compte-client" placeholder="0000 0000 0000">
+                        <label for="compte-client">N° Compte Client</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="titulaire" placeholder="John Doe">
+                        <label for="titulaire">Titulaire</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" name="montant-caution" id="montant-caution" class="form-control" placeholder="1000">
+                        <label for="montant-caution">Montant de la 
+                            Caution</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" name="frais-caution" id="frais-caution" class="form-control" placeholder="1000">
+                        <label for="frais-caution">Frais sur la Caution</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" name="commission" id="commission" class="form-control" placeholder="1000">
+                        <label for="commission">Commission</label>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column bd-highlight align-self-end">
+                    <div class="form-floating mb-3">
+                        <output class="form-control" name="taxe1" id="taxe1"></output>
+                        <label for="taxe1">Taxe</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <output class="form-control" name="taxe2" id="taxe2"></output>
+                        <label for="taxe2">Taxe</label>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-end flex-column bd-highlight">
+                    <div class="form-floating align-self-stretch mb-3 bd-highlight">
+                        <select class="form-select" id="type-beneficiare">
+                        <option selected>Choisir un type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>
+                        <label for="type-beneficiare">Type de bénéficiaire</label>
+                    </div>
+                    <div class="form-floating align-self-stretch mb-3 bd-highlight">
+                        <input type="date" class="form-control" id="mise-en-place" placeholder="John Doe">
+                        <label for="mise-en-place">Mise en place</label>
+                    </div>
+                    <div class="form-floating mb-3 align-self-stretch bd-highlight">
+                        <input type="number" class="form-control" id="duree-caution" placeholder="0">
+                        <label for="duree-caution">Durée de la caution (N)</label>
+                    </div>
+                    <div class="form-floating mb-3 align-self-stretch bd-highlight">
+                        <input type="number" class="form-control" id="taux-commission" min="0" max="100" step="any"  placeholder="10.0">
+                        <label for="taux-commission">Taux de commission</label>
+                    </div>
+                    <div class="form-floating mb-3 align-self-stretch bd-highlight">
+                        <input type="text" class="form-control invisible" id="invisible">
+                    </div>
+                    <div class="form-floating mb-3 mt-auto align-self-stretch bd-highlight">
+                        <output class="form-control" name="teg" id="teg"></output>
+                        <label for="teg">TEG</label>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="row g-2">
+                <div class="col">
+                    <button type="submit" class="form-control btn btn-warning shadow">Caluler</button>
+                </div>
+                <div class="col">
+                    <button type="submit" class="form-control btn btn-warning shadow">Enregistrer</button>
+                </div>
+            </div>  
+
+            <div class="row row-cols-1 row-cols-sm-2 mt-4 border-top border-bottom border-secondary rounded">
+                <div class="col">
+                </div>
+                <div class="col mt-2">
+                    <p>Base annuelle de calcul: 360jours</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
