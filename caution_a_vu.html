@@ -36,58 +36,58 @@
           </div>
         </div>
     </nav>
-    <div class="container text-center shadow bg-body rounded p-3 mb-5 mt-4" style="height: 75%;
+    <div class="container p-3 mt-4 mb-5 text-center rounded shadow bg-body" style="height: 75%;
   ">
             <h5 class="mb-3">Edition d'une convention de prêt (caution à vue)</h5>
         <form action="index.html" method="post" class="text-center">
             <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3">
                 <div class="col d-flex flex-column bd-highlight">
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="text" class="form-control" id="compte-gestion" placeholder="0000 0000 0000">
                         <label for="compte-gestion">N° Compte Gestion</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="text" class="form-control" id="compte-client" placeholder="0000 0000 0000">
                         <label for="compte-client">N° Compte Client</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="text" class="form-control" id="titulaire" placeholder="John Doe">
                         <label for="titulaire">Titulaire</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="number" name="montant-caution" id="montant-caution" class="form-control" placeholder="1000">
                         <label for="montant-caution">Montant de la 
                             Caution</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="number" name="frais-caution" id="frais-caution" class="form-control" placeholder="1000">
                         <label for="frais-caution">Frais sur la Caution</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="number" name="commission-prorata" id="commission-prorata" class="form-control" placeholder="1000">
                         <label for="commission-prorata">Commission au Prorata</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <input type="number" name="commission-1" id="commission-1" class="form-control" placeholder="1000">
                         <label for="commission-1">Commission trimestrielle x3</label>
                     </div>
                 </div>
                 <div class="col d-flex flex-column bd-highlight align-self-end">
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <output class="form-control" name="taxe1" id="taxe1"></output>
                         <label for="taxe1">Taxe</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <output class="form-control" name="taxe2" id="taxe2"></output>
                         <label for="taxe2">Taxe</label>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3 form-floating">
                         <output class="form-control" name="taxe3" id="taxe3"></output>
                         <label for="taxe3">Taxe</label>
                     </div>
                 </div>
                 <div class="col d-flex align-items-end flex-column bd-highlight">
-                    <div class="form-floating align-self-stretch mb-3 bd-highlight">
+                    <div class="mb-3 form-floating align-self-stretch bd-highlight">
                         <select class="form-select" id="type-beneficiare">
                         <option selected>Choisir un type</option>
                         <option value="1">One</option>
@@ -96,37 +96,41 @@
                         </select>
                         <label for="type-beneficiare">Type de bénéficiaire</label>
                     </div>
-                    <div class="form-floating align-self-stretch mb-3 bd-highlight">
+                    <div class="mb-3 form-floating align-self-stretch bd-highlight">
                         <input type="date" class="form-control" id="mise-en-place" placeholder="John Doe">
                         <label for="mise-en-place">Mise en place</label>
                     </div>
-                    <div class="form-floating mb-3 align-self-stretch bd-highlight">
+                    <div class="mb-3 form-floating align-self-stretch bd-highlight">
                         <input type="number" class="form-control" id="taux-commission" min="0" max="100" step="any"  placeholder="10.0">
                         <label for="taux-commission">Taux de commission</label>
                     </div>
-                    <div class="form-floating mb-3 align-self-stretch bd-highlight">
-                        <input type="text" class="form-control invisible" id="invisible">
+                    <div class="mb-3 form-floating align-self-stretch bd-highlight">
+                        <input type="text" class="invisible form-control" id="invisible">
                     </div>
-                    <div class="form-floating mb-3 mt-auto align-self-stretch bd-highlight">
+                    <div class="mt-auto mb-3 form-floating align-self-stretch bd-highlight">
                         <output class="form-control" name="teg" id="teg"></output>
                         <label for="teg">TEG</label>
                     </div>
                 </div>
-            </div>            
+            </div>     
 
-            <div class="row g-2">
+            <div class="row row-cols-1 row-cols-sm-4 g-2">
                 <div class="col">
-                    <button type="submit" class="form-control btn btn-warning shadow">Caluler</button>
                 </div>
                 <div class="col">
-                    <button type="submit" class="form-control btn btn-warning shadow">Enregistrer</button>
+                    <button type="submit" class="shadow form-control btn btn-warning">Caluler</button>
                 </div>
-            </div>  
+                <div class="col">
+                    <button type="submit" class="shadow form-control btn btn-warning">Enregistrer</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>   
 
-            <div class="row row-cols-1 row-cols-sm-2 mt-4 border-top border-bottom border-secondary rounded">
+            <div class="mt-4 rounded row row-cols-1 row-cols-sm-2 border-top border-bottom border-secondary">
                 <div class="col">
                 </div>
-                <div class="col mt-2">
+                <div class="mt-2 col">
                     <p>Base annuelle de calcul: 360jours</p>
                 </div>
             </div>
